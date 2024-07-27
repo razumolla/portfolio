@@ -8,7 +8,7 @@ import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
 import { FaHackerrank } from "react-icons/fa6";
 
-function HeroSection() {
+function Hero() {
   return (
     <section className="relative flex flex-col items-center justify-between py-4 lg:py-12">
       <Image
@@ -25,7 +25,8 @@ function HeroSection() {
             Hello, <br />
             I&apos;m <span className="text-primary">{personalData.name}</span>
             {` , passionate about crafting `}
-            <span className=" text-[#ff8c00e3]">{personalData.department}</span>.
+            <span className=" text-[#ff8c00e3]">{personalData.department}</span>
+            .
           </h1>
 
           <div className="my-12 flex items-center gap-5">
@@ -241,4 +242,4 @@ function HeroSection() {
   );
 }
 
-export default HeroSection;
+export default Hero;
