@@ -3,6 +3,7 @@ import "./globals.css";
 import "./css/card.scss";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/helper/scroll-to-top";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           {children}
           <Footer />
+          <ScrollToTop />
         </main>
       </body>
     </html>
