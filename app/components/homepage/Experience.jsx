@@ -14,7 +14,7 @@ const Experience = () => {
       <Image
         src="/section.svg"
         alt="Hero"
-        width={1572}
+        width={1536}
         height={795}
         className="absolute top-0 -z-10"
       />
