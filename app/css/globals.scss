@@ -42,18 +42,9 @@ body {
   --index: 4;
 }
 
-// .sticky-card {
-//   // padding-top: calc(var(--index) * 2.5rem);
-//   top: calc(var(--index) * 4rem);
-// }
-
-/* Sticky card styles */
 .sticky-card {
-  position: -webkit-sticky; /* For Safari */
-  position: sticky;
-  top: calc(var(--index) * 4rem); /* Adjust top based on the index */
-  transition: all 0.5s ease-in-out;
-  z-index: 10; /* Ensure sticky elements stay on top */
+  // padding-top: calc(var(--index) * 2.5rem);
+  top: calc(var(--index) * 4rem);
 }
 
 /* START: Smooth Scroll Behavior */
@@ -65,3 +56,8 @@ html {
   scroll-margin-top: 92px;
 }
 /* End: Smooth  Scroll Behavior */
+
+/* START: General styles */
+.max-width {
+  @apply max-w-[1280px] mx-auto;
+}
