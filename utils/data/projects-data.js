@@ -6,7 +6,7 @@ import travel from '/public/image/travel.jpg';
 export const projectsData = [
     {
         id: 1,
-        name: 'Office Desk for HRM Solution',
+        name: 'Office Desk (HRM)',
         description: "An HRM solution application developed to manage employee records, attendance, payroll, and performance reviews. The application includes an admin dashboard for HR managers and a self-service portal for employees. It supports role-based access control and integrates with various third-party services for payroll and email notifications.",
         tools: ['React', 'Redux', 'Node.js', 'NestJs', 'PostgreSQL', 'JWT', 'Tailwind CSS', 'Antd'],
         role: 'Full Stack Developer',

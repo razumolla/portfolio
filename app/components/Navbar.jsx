@@ -24,6 +24,7 @@ const Navbar = () => {
         <CustomLink path="#experience">Experience</CustomLink>
         <CustomLink path="#projects">Projects</CustomLink>
         <CustomLink path="#education">Education</CustomLink>
+        <CustomLink path="#contact">Contact</CustomLink>
       </div>
     </nav>
   );

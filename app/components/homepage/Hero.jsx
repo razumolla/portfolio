@@ -47,21 +47,21 @@ function Hero() {
             <Link
               href={personalData.facebook}
               target="_blank"
-              className="transition-all text-[#ff8c00e3] hover:scale-125 duration-300"
+              className="transition-all text-primary hover:scale-125 duration-300"
             >
               <FaFacebook size={30} />
             </Link>
             <Link
               href={personalData.leetcode}
               target="_blank"
-              className="transition-all text-[#ff8c00e3] hover:scale-125 duration-300"
+              className="transition-all text-primary hover:scale-125 duration-300"
             >
               <SiLeetcode size={30} />
             </Link>
             <Link
               href={personalData.leetcode}
               target="_blank"
-              className="transition-all text-[#ff8c00e3] hover:scale-125 duration-300"
+              className="transition-all text-primary hover:scale-125 duration-300"
             >
               <FaHackerrank size={30} />
             </Link>

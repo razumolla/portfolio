@@ -8,7 +8,7 @@ export const educations = [
   {
     id: 2,
     title: "Diploma in Computer Technology",
-    duration: "2018 - 2020",
+    duration: "2016 - 2021",
     institution: "Govt. Technical School & College, Rajbari",
   },
   {
