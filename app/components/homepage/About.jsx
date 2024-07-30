@@ -55,7 +55,7 @@ const About = () => {
             width={300}
             height={300}
             alt="Razu Molla"
-            className="rounded-lg transition-all duration-1000 grayscale brightness-110 hover:grayscale-0 hover:scale-125 cursor-pointer"
+            className="rounded-lg transition-all duration-1000  brightness-110  hover:scale-125 cursor-pointer"
           />
         </div>
       </div>
