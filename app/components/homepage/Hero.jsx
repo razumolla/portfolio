@@ -3,10 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
+import { FaHackerrank } from "react-icons/fa6";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
-import { SiLeetcode } from "react-icons/si";
-import { FaHackerrank } from "react-icons/fa6";
 
 function Hero() {
   return (
@@ -33,35 +32,35 @@ function Hero() {
             <Link
               href={personalData.github}
               target="_blank"
-              className="transition-all text-primary hover:scale-125 duration-300"
+              className="transition-all text-icon hover:scale-125 duration-300"
             >
               <BsGithub size={30} />
             </Link>
             <Link
               href={personalData.linkedIn}
               target="_blank"
-              className="transition-all text-primary hover:scale-125 duration-300"
+              className="transition-all text-icon hover:scale-125 duration-300"
             >
               <BsLinkedin size={30} />
             </Link>
             <Link
               href={personalData.facebook}
               target="_blank"
-              className="transition-all text-primary hover:scale-125 duration-300"
+              className="transition-all text-icon hover:scale-125 duration-300"
             >
               <FaFacebook size={30} />
             </Link>
-            <Link
+            {/* <Link
               href={personalData.leetcode}
               target="_blank"
-              className="transition-all text-primary hover:scale-125 duration-300"
+              className="transition-all text-icon hover:scale-125 duration-300"
             >
               <SiLeetcode size={30} />
-            </Link>
+            </Link> */}
             <Link
-              href={personalData.leetcode}
+              href={personalData.hackerRank}
               target="_blank"
-              className="transition-all text-primary hover:scale-125 duration-300"
+              className="transition-all text-icon hover:scale-125 duration-300"
             >
               <FaHackerrank size={30} />
             </Link>
