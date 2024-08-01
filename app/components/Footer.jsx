@@ -10,10 +10,10 @@ const Footer = () => {
         <div className="flex justify-center -z-40">
           <div className="absolute top-0 h-[1px] w-1/2 bg-gradient-to-r from-transparent via-violet-500 to-transparent"></div>
         </div>
-        
+
         <div className="flex flex-col md:flex-row items-center justify-between">
-          <p className="text-sm">
-            © 2024 - All right reserved by{" "}
+          <p className="text-sm uppercase">
+            © 2024{" "}
             <Link
               target="_blank"
               href={personalData.linkedIn}
