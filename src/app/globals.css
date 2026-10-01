@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   Design tokens
+   Every color used in the app is defined here. Components only use the
+   semantic utilities generated below (bg-background, text-primary, ...),
+   so re-theming the site means editing this block and nothing else.
+------------------------------------------------------------------- */
+:root {
+  /* Paper and ink */
+  --background: oklch(0.965 0.013 85);
+  --foreground: oklch(0.2 0.012 60);
+
+  /* Slightly lifted paper for hover states and toasts */
+  --surface: oklch(0.99 0.006 85);
+
+  --muted-foreground: oklch(0.47 0.015 60);
+
+  /* Single accent: vermilion */
+  --primary: oklch(0.6 0.21 32);
+  --primary-foreground: oklch(0.985 0.008 85);
+
+  /* Hairline rules between rows */
+  --border: oklch(0.84 0.016 85);
+  --ring: oklch(0.6 0.21 32);
+
+  --destructive: oklch(0.52 0.2 25);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-display: var(--font-instrument-serif), ui-serif, Georgia, serif;
+
+  --animate-fade-up: fade-up 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-primary text-primary-foreground;
+  }
+
+  :focus-visible {
+    @apply outline-ring outline-2 outline-offset-2;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* Small uppercase mono label used for eyebrows, meta and nav */
+@utility type-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
